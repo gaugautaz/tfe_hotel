@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -17,9 +18,9 @@ public class Reservation {
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
-    @ManyToOne
+    @ManyToMany
     @JoinColumn(name = "room_id")
-    private Room room;
+    private List<Room> room;
     private String status;
     private LocalDate startDate;
     private LocalDate endDate;

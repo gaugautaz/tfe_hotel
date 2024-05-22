@@ -25,15 +25,15 @@ public class UserController {
         return userService.getUserById(id);
     }
 
-    @PostMapping
-    public User createUser(@RequestBody User user) {
-        return userService.createUser(user);
-    }
+//    @PostMapping
+//    public User createUser(@RequestBody User user) {
+//        return userService.createUser(user);
+//    }
 
-    @PutMapping("/{id}")
-    public User updateUser(@PathVariable Long id, @RequestBody User userDetails) {
-        return userService.updateUser(id, userDetails);
-    }
+//    @PutMapping("/{id}")
+//    public User updateUser(@PathVariable Long id, @RequestBody User userDetails) {
+//        return userService.updateUser(id, userDetails);
+//    }
 
     @DeleteMapping("/{id}")
     public void deleteUser(@PathVariable Long id) {
