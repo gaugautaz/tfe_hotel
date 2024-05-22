@@ -1,5 +1,8 @@
 package com.project.hotel.controller;
 
+import com.project.hotel.service.UserService;
+import com.project.hotel.service.RoomService;
+import com.project.hotel.service.ReservationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
